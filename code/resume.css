@@ -1,0 +1,143 @@
+/*
+	Author:			Meyer McMains
+	Date:			4/26/2016
+	Assignment:		Personal Website
+	Purpose:		CSS Styling for resume page
+*/
+
+body {
+	font-family: "Lucida Console", sans-serif;
+}
+
+/* wrapper for resume content */
+div.wrapper {
+	width: 900px;
+	margin: 0 auto;
+	border: solid #66CCCC;
+    border-style: groove;
+	margin-top: 50px;
+}
+
+/* This class defines the styles for the right half
+	of the document's header, where your name, address,
+	telephone number, and email address appear. 
+*/
+.rhdr {
+	width: 900px;
+	margin-top: 50px; 
+	margin-bottom: 50px;
+	padding: 10px;
+	height: 300px;
+}
+
+/* 	border = one pixel wide; solid; black in color  
+	height = thirty pixels
+	margin = fifteen pixels top and bottom, 'auto' left and right
+	padding = ten pixels all around
+	width = Eight hundred and eighty pixels (why not nine hundred?)
+*/
+footer {
+	border: solid #66CCCC;
+    border-style: groove;
+	height: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin: 0 auto;
+	padding: 10px;
+	width: 880px;	
+	border-top: transparent;
+}
+
+.fRight {
+	float: right;
+	vertical-align: middle; /* Aligns the element vertically in its container */
+	margin-right: 50px;  	/* Just because it makes the image display better */ 
+}
+
+.txtCenter {
+	text-align: center;
+	line-height: 240px;  	/* This helps the text block align vertically in its parent element. */
+}
+
+/* 	It took me a while to make this work. What it does is take a span element
+	and make it display vertically centered within its container. We use it in
+	this lab to align the text in the footer in the middle between the top and
+	bottom.
+*/
+span.vcenter {
+	display: inline-block; 
+	vertical-align: middle; 
+	line-height: normal;
+}
+
+.myname {
+	font-size: 	150%;
+	font-weight: bold;  /* This is how we bold text without using <strong> or 	<b> */
+	font-family: 'Orbitron', sans-serif;
+}
+
+/*  
+	This class is for styling institution information on our page. The following rules should apply:
+		- font-size should be 1.5 em
+		- font-weight should be bold
+		- color should be #7D5300
+*/
+.inst {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: black;
+}
+
+/*  
+	This class styles the information block of the resume, where the Education
+	and Experience blocks are placed.
+*/
+.info {
+	width: 800px;
+	clear: both;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+/*
+	This one was tricky. Its purpose is to style the dates entry for
+	Education and Experience, which should appear on the same line as 
+	the organization name, e.g., "East Tennessee State University," but
+	right-justified. Apply the following property/values:
+		- font-style, italic
+		- font-size, 1.4em
+		- float, right
+		- display, block
+		- color, #7D5300
+*/
+.dates {
+	font-style: italic;
+	font-size: 1.4em;
+	float: right;
+	display: block;
+	color: black;
+}
+
+p.clr {
+	clear:both;
+	padding-left: 50px;
+	line-height: 1.3em;
+	font-size: 1.3em;
+}
+
+hr{
+	border-bottom: solid #66CCCC;
+    border-style: groove;
+    border-top: transparent;
+}
+
+/* change font for header */
+h1{
+	font-family: "Orbitron", sans-serif;
+}
+
+/* style for resume picture */
+.pic{
+	border-radius: 100%;
+    border: solid #66cccc;
+}

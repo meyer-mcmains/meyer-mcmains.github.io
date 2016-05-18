@@ -1,0 +1,407 @@
+<!DOCTYPE html>  <!-- Defines the version of html.  In this case version 5 -->
+
+<html lang = "en"> <!--Start of html code -->
+
+	<head><!-- meta-data or information about the web page 
+				goes in the header section-->
+				
+		<!--
+			Name:		Meyer McMains   
+			Course:   	CSCI-1710-002
+			Assignment:	Personal Project
+			Due Date:	April 26th 2016
+			
+			Purpose: 	Using knowledge gained in class create a website
+		-->		
+		<meta charset="utf-8">
+		<title>Artists</title>
+		<!-- import sytlesheets to use -->
+		<link rel="stylesheet" type="text/css" href="myCss.css">
+		<link rel="stylesheet" type="text/css" href="artistCSS.css">
+		<!-- import font from google to use -->
+		<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+		<!-- set favicon -->
+		<link rel="icon" href="../images/icon.ico"/>
+		
+	</head>
+	
+	<body><!-- the body of the web-page is where the actual 
+			content being displayed is written/placed -->
+
+		<!-- display the logo -->
+		<a href="home.html"><img id="logo" class="logo" src="../images/mainIcon.png" alt="logo"></a>
+		<img class="arm" src="../images/arm.png" alt="logo arm">
+
+		<!-- display the login -->
+		<img class="login" src="../images/myself.jpg" alt="login">
+		<div class="loginButton">Logout</div>
+
+		<!-- 'record' text used as part of logo -->
+		<a href="home.html"><p class="name">Record</p></a>
+
+		<!-- wrapper for cotent -->
+    	<div class="header">
+    		<!-- display the main navigation -->
+    		<ul class="menu">
+    			<li><a class="menuAnchor" href="home.html"><div class="page">Home</div></a></li>
+    			<li><a class="menuAnchor" href="artists.html"><div class="page">Artists</div></a></li>
+    			<li><a class="menuAnchor" href="profile.html#aboutDiv"><div class="page">Profile</div></a></li>
+    			<li><a class="menuAnchor" href="resume.html"><div class="page">Resume</div></a></li>
+    		</ul>
+
+    		<!-- display side menu -->
+			<div class="sideMenuBar">
+				<!-- show artist picture and name -->
+				<figure class="artistFigure">
+    				<img class="artistPic" src="../images/littlegreencarsArtists.jpg" alt="Little Green Cars">
+    				<figcaption class="artistName">Little Green Cars</figcaption>
+    			</figure>
+
+    			<!-- creates the sidemenu -->
+				<ul class="sideMenu">
+					<li><a class="menuAnchor" href="#aboutDiv"><div class="sideMenuTab">About </div></a></li>
+					<li><a class="menuAnchor" href="#newsDiv"><div class="sideMenuTab">News </div></a></li>
+					<li><a class="menuAnchor" href="#albumsDiv"><div class="sideMenuTab">Albums </div></a></li>
+					<li><a class="menuAnchor" href="#liveDiv"><div class="sideMenuTab">Live </div></a></li>
+					<li><a class="menuAnchor" href="#merchDiv"><div class="sideMenuTab">Merch </div></a></li>
+				</ul>	
+			</div>
+
+			<!-- div used as a internal page wrapper -->
+			<div id="aboutDiv">
+				<!-- display content -->
+				<p class="heading">Little Green Cars</p>
+				<p class="info">Little Green Cars are an Indie and Folk rock band out of Dublin, Ireland. Formed in 2008, the Little Green Cars have since released two albums, and tour the United Kindom and the United States extensively</p>
+				<p class="heading2">Members</p>
+				<!-- list used to display members -->
+				<ul class="members">
+    				<li>Stevie Appleby</li>
+    				<li>Dylan Lynch</li>
+    				<li>Donagh Seaver O'Leary</li>
+    				<li>Adam O'Regan</li>
+    				<li>Faye O'Rourke</li>
+    			</ul> 
+    			<!-- checkboxs and radio buttons are used as kind of a hack to allow for dynamic display of content used through rest of this page
+    			using the checkbox and label as kind of a reskinned button i can expand content -->
+
+    			<!-- content from wikipedia: https://en.wikipedia.org/wiki/Little_Green_Cars -->
+    			<input type="checkbox" id="toggle-1">
+    			<label for="toggle-1"><p class="heading2 hoverred" style="cursor: pointer;">Extended Bio</p></label>
+				<p class="bio">Little Green Cars were formed in 2008, by Adam O'Regan, Stevie Appleby, Faye O'Rourke, Donagh Seaver O'Leary and Dylan Lynch. Since signing with Glassnote Music, the band has toured America and the UK extensively. The US portion of the 2013 tour included a live performance of their single Harper Lee on Late Night with Jimmy Fallon. The band has played at the 2013 SXSW music festival in Austin, Texas, the Coachella music festival in California, Lollapalooza 2013 in Chicago and the 2013 Osheaga festival in Montréal. On January 7 2016, they announced their second album, Ephemera, going to be released on March 11 2016 in BBC 1 Radio and played their first single from the album, The Song They Play Every Night. The album was named after a poem by Irish Nobel-prized poet W. B. Yeats about slowly fading love. On February 10, they uploaded official audio of their new song, Easier Day, on their Youtube channel and the music video which was uploaded to their Vevo channel. <br>They released their second album, Ephemera on CD, Vinyl, and Spotify on March 11 2016.</p>
+				<!-- this div shows box that makes it look like sidemenu is set to this page -->
+				<div class="aboutSelected"></div>
+			</div>
+
+			<!-- another div used as a internal page wrapper -->
+			<div id="newsDiv">
+				<div>
+					<!-- see comment on line 84 -->
+					<!-- content from little green cars website http://store.universalmusic.com/littlegreencars/*/*/Ephemera-CD/538K0000000 -->
+					<input type="checkbox" id="toggle-2">
+					<label for="toggle-2"><p class="newsheading hoverred" style="cursor: pointer;">Ephemera Released</p></label>
+					<p class="news1">When Little Green Cars were deciding on a title for their extraordinary second album, they discovered a poem that captured exactly what they were after. That poem is called Ephemera, and as soon as singer Stevie Appleby read it to his band mates, the album was too.<br><br>“It’s a transitional album,” says Stevie. “Lyrically, it’s all about change – the end of some eras, new beginnings, learning from the past and looking to the future. Ephemera means things that are important to you, but only for a short time. That could apply to music or relationships or even a particular day. The poem sums up the theme of the album, which we only realised ourselves when we’d recorded the songs.”<br><br>Two deaths, relationship break-ups and over two years spent touring the band’s widely-acclaimed 2013 debut Absolute Zero are among the key events that inform Ephemera’s richly-textured, harmony-soaked rock songs. While the impact of those events will change over time, the intense emotions they evoked will live on in the music.<br><br>“It’s an album that wants to be important to people,” explains Appleby. “Importance can fade but the feelings should stay. Say you adore a song at 16 because it expresses exactly how you’re feeling. Hopefully, the song won’t always mean that much because you’ll move on, but hearing it should bring those feelings back.”<br><br>Little Green Cars are five former school friends from Dublin who were still in their teens when they were spotted and signed to Glassnote and recorded Absolute Zero with producer Markus Dravs. That album changed their lives, taking them on tour everywhere from Europe and Australia to Russia and the States, which they criss-crossed six times in three years.<br><br>Now all in their early 20s, Little Green Cars are both a different band and the same five friends who met every Sunday aged 15 in Stevie’s garden shed to start writing songs. Those changes, their shared experiences and individual ups and downs are candidly documented in Ephemera, a gorgeous, grown-up album about, well, growing up.<br><br>In countless ways, Little Green Cars have changed. They’ve moved on, not just from the kids who made the startlingly assured Absolute Zero. In truth, they’ve already moved on from the people they were when they wrote Ephemera. But singing those songs on stage, as they will for heaven knows how long, will remind them – and their fans – of the hand life deals you and how you deal with it.</p>
+				</div>
+				<div>
+					<!-- see comment on line 84 -->
+					<input type="checkbox" id="toggle-3">
+					<label for="toggle-3"><p class="newsheading2 hoverred" style="cursor: pointer;">2016 US Tour</p></label>
+					<p class="news1">The Little Green Cars have announced their 2016 Tour of the United States. They will be playing across the country from March 23rd to May 7th. They will be playing tracks from their soon to be released album Ephemera. They will be playing at various cities around the US at a variety of venues. Tickets and information on their newest album can be found on their website www.littlegreencars.com.</p>
+				</div>
+				<!-- div used to make menu look like we are on this internal page -->
+				<div class="newsSelected"></div>
+			</div>
+
+			<!-- wrapper used for album internal page -->
+			<div id="albumsDiv">
+				<!-- wrapper classes for album covers -->
+				<div class="albumsSelected"></div>
+				<div class="albumcontainer">
+					<!-- see comment on line 84 -->
+					<input type="checkbox" id="toggle-4">
+					<label class="cover" for="toggle-4">
+						<!-- div for expanded cover view -->
+						<div class="expandcover">
+							<!-- album cover -->
+							<img src="../images/absolutezero.jpg" alt="Absolute Zero">
+							<!-- track listing -->
+							<ol start="0" class="tracks">
+								<li>Absolute Zero (2013)</li>
+								<li>Harper Lee</li>
+								<li>Angel Owl</li>
+								<li>My Love Took Me Down to the River to Silence Me</li>
+								<li>The Consequences of Not Sleeping</li>
+								<li>Big Red Dragon</li>
+								<li>Red and Blue</li>
+								<li>The Kitchen Floor</li>
+								<li>The John Wayne</li>
+								<li>Please</li>
+								<li>Them</li>
+								<li>Goodbye Blue Monday</li>
+							</ol>
+							<!-- ul for submenu under album -->
+							<ul class="albumSubMenu">
+				    			<li>
+				    				<!-- see comment on line 84 -->
+				    				<input type="checkbox" id="toggle8">
+				    				<label class="albumSubMenuTab" for="toggle8">
+				    					<div class="albumSubMenuTab click">About</div>
+				    					<div>
+				    						<!-- content derrived from wikipedia https://en.wikipedia.org/wiki/Little_Green_Cars -->
+					    					<div class="albumabout">
+					    					Released in 2013 Absolute Zero is the debut album for the Little Green Cars. It totals eleven tracks including their singles <i>The John Wayne</i>, <i>Harper Lee</i>, <i>My Love Took Me Down To The River To Silence Me</i>, and <i>Big Red Dragon</i>.
+					    					</div>
+					    				</div>
+				    				</label>
+				    			</li>
+				    			<li>
+				    				<!-- see comment on line 84 -->
+				    				<!-- changing which raidio button is selected displays the correct lyrics contained in the css -->
+				    				<input type="checkbox" id="toggle10">
+				    				<label class="albumSubMenuTab" for="toggle10">
+				    					<!-- submenu optino to display lyrics -->
+				    					<div class="albumSubMenuTab click">Lyrics</div>
+				    					<!-- lyric wrapper -->
+				    					<div class="lyrics">
+				    						<input type="radio" id="radio1" name="lyrics">
+				    						<label class="lyricSub" for="radio1">
+				    						<div class="lyricSubTab">01</div>
+				    						</label>
+				    						<input type="radio" id="radio2" name="lyrics">
+				    						<label class="lyricSub" for="radio2">
+				    						<div class="lyricSubTab">02</div>
+				    						</label>
+				    						<input type="radio" id="radio3" name="lyrics">
+				    						<label class="lyricSub" for="radio3">
+				    						<div class="lyricSubTab">03</div>
+				    						</label>
+				    						<input type="radio" id="radio4" name="lyrics">
+				    						<label class="lyricSub" for="radio4">
+				    						<div class="lyricSubTab">04</div>
+				    						</label>
+											<input type="radio" id="radio5" name="lyrics">
+				    						<label class="lyricSub" for="radio5">
+				    						<div class="lyricSubTab">05</div>
+				    						</label>
+				    						<input type="radio" id="radio6" name="lyrics">
+				    						<label class="lyricSub" for="radio6">
+				    						<div class="lyricSubTab">06</div>
+				    						</label>
+				    						<input type="radio" id="radio7" name="lyrics">
+				    						<label class="lyricSub" for="radio7">
+				    						<div class="lyricSubTab">07</div>
+				    						</label>
+				    						<input type="radio" id="radio8" name="lyrics">
+				    						<label class="lyricSub" for="radio8">
+				    						<div class="lyricSubTab">08</div>
+				    						</label>
+				    						<input type="radio" id="radio9" name="lyrics">
+				    						<label class="lyricSub" for="radio9">
+				    						<div class="lyricSubTab">09</div>
+				    						</label>
+				    						<input type="radio" id="radio10" name="lyrics">
+				    						<label class="lyricSub" for="radio10">
+				    						<div class="lyricSubTab">10</div>
+				    						</label>
+				    						<input type="radio" id="radio11" name="lyrics">
+				    						<label class="lyricSub" for="radio11">
+				    						<div class="lyricSubTab">11</div>
+				    						</label>
+				    						<!-- this display class is used to display the lyrics -->
+				    						<div class="display">
+				    						</div>
+				    					</div>
+				    				</label>
+				    			</li>
+				    			<li>
+				    				<!-- see comment on line 84 -->
+				    				<input type="checkbox" id="toggle9">
+				    				<label class="albumSubMenuTab" for="toggle9">
+				    					<!-- submenu option to display streaming -->
+				    					<div class="albumSubMenuTab click">Streaming</div>
+				    					<div>
+				    					<!-- embeded from spotify -->
+				    					<iframe class="spotify" src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A0FSlXUD9lWwWP1NkfiNmQH" width="640" height="720" frameborder="0" allowtransparency="true"></iframe>
+				    					</div>
+				    				</label>
+				    		</ul>
+						</div>
+					</label>
+				</div>
+
+				<!-- div used a interal page when targeted -->		
+				<div class="albumcontainer">
+					<!-- see comment on line 84 -->
+					<input type="checkbox" id="toggle-5">
+					<label class="cover2" for="toggle-5">
+						<div class="expandcover">
+							<!-- album cover for 2 -->
+							<img src="../images/emphemera.jpg" alt="Emphemera">
+								<!-- album 2 track listing -->
+								<ol start="0" class="tracks">
+								<li>Ephemera (2016)</li>
+								<li>The Song They Play Every Night</li>
+								<li>You vs Me</li>
+								<li>Easier Day</li>
+								<li>The Garden of Death</li>
+								<li>Brother</li>
+								<li>Clare De Lune</li>
+								<li>Ok Ok Ok</li>
+								<li>The Party</li>
+								<li>I Dont Even Know Who</li>
+								<li>Good Women Do</li>
+								<li>Winds of Peace</li>
+								<li>The Factory</li>
+							</ol>
+							<!-- sub menu for inner content -->
+							<ul class="albumSubMenu2">
+				    			<li>
+				    				<!-- see comment on line 84 -->
+				    				<input type="checkbox" id="toggle20">
+				    				<label class="albumSubMenuTab2" for="toggle20">
+				    					<!-- submenu otpion to display about -->
+				    					<div class="albumSubMenuTab2 click">About</div>
+				    					<div>
+				    						<!-- content from wikipeida https://en.wikipedia.org/wiki/Little_Green_Cars -->
+					    					<div class="albumabout2">
+					    					Released in 2016 Ephemera is the second album from the Little Green Cars. It totals twelve tracks including their singles <i>The Song They Play Every Night</i>, <i>Easier Day</i>, and <i>Clair De Lune</i>.
+					    					</div>
+					    				</div>
+				    				</label>
+				    			</li>
+				    			<li>
+				    				<!-- see comment on line 84 -->
+				    				<!-- changing which raidio button is selected displays the correct lyrics contained in the css -->
+				    				<input type="checkbox" id="toggle21">
+				    				<label class="albumSubMenuTab2" for="toggle21">
+				    					<!-- submenu option -->
+				    					<div class="albumSubMenuTab2 click">Lyrics</div>
+				    					<!-- wrapper for the lyrics -->
+				    					<div class="lyrics2">
+				    						<input type="radio" id="radio100" name="lyrics">
+				    						<label class="lyricSub2" for="radio100">
+				    						<div class="lyricSubTab2">01</div>
+				    						</label>
+				    						<input type="radio" id="radio200" name="lyrics">
+				    						<label class="lyricSub2" for="radio200">
+				    						<div class="lyricSubTab2">02</div>
+				    						</label>
+				    						<input type="radio" id="radio300" name="lyrics">
+				    						<label class="lyricSub2" for="radio300">
+				    						<div class="lyricSubTab2">03</div>
+				    						</label>
+				    						<input type="radio" id="radio400" name="lyrics">
+				    						<label class="lyricSub2" for="radio400">
+				    						<div class="lyricSubTab2">04</div>
+				    						</label>
+											<input type="radio" id="radio500" name="lyrics">
+				    						<label class="lyricSub2" for="radio500">
+				    						<div class="lyricSubTab2">05</div>
+				    						</label>
+				    						<input type="radio" id="radio600" name="lyrics">
+				    						<label class="lyricSub2" for="radio600">
+				    						<div class="lyricSubTab2">06</div>
+				    						</label>
+				    						<input type="radio" id="radio700" name="lyrics">
+				    						<label class="lyricSub2" for="radio700">
+				    						<div class="lyricSubTab2">07</div>
+				    						</label>
+				    						<input type="radio" id="radio800" name="lyrics">
+				    						<label class="lyricSub2" for="radio800">
+				    						<div class="lyricSubTab2">08</div>
+				    						</label>
+				    						<input type="radio" id="radio900" name="lyrics">
+				    						<label class="lyricSub2" for="radio900">
+				    						<div class="lyricSubTab2">09</div>
+				    						</label>
+				    						<input type="radio" id="radio1000" name="lyrics">
+				    						<label class="lyricSub2" for="radio1000">
+				    						<div class="lyricSubTab2">10</div>
+				    						</label>
+				    						<input type="radio" id="radio11000" name="lyrics">
+				    						<label class="lyricSub2" for="radio11000">
+				    						<div class="lyricSubTab2">11</div>
+				    						</label>
+				    						<input type="radio" id="radio12000" name="lyrics">
+				    						<label class="lyricSub2" for="radio12000">
+				    						<div class="lyricSubTab2">12</div>
+				    						</label>
+				    						<div class="display2">
+				    						</div>
+				    					</div>
+				    				</label>
+				    			</li>
+				    			<li>
+				    				<!-- see comment line 84 -->s
+				    				<input type="checkbox" id="toggle90">
+				    				<label class="albumSubMenuTab2" for="toggle90">
+				    					<!-- menu option -->
+				    					<div class="albumSubMenuTab2 click">Streaming</div>
+				    					<!-- wrapper for the embed -->
+				    					<div>
+				    					<iframe class="spotify2" src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A76XkCQAMoX7CvMSn5gArB5" width="640" height="720" frameborder="0" allowtransparency="true"></iframe>
+				    					<!-- embeded from spotify -->
+				    					</div>
+				    				</label>
+				    		</ul>
+						</div>
+					</label>
+				</div>
+			</div>
+
+			<!-- div used as internal page when targeted -->
+			<div id="liveDiv">
+					<!-- songkick widget from here http://littlegreencars.com/ click get tickets button --> 
+					<iframe name="easyXDM_5285298_4081_provider" id="easyXDM_5285298_4081_provider" class="songkick-widget" src="http://widget.songkick.com/songkick-widget.html?artist=5285298&amp;header=&amp;background-color=transparent&amp;font-color=%23ffffff&amp;font-family=neut%2C%20Arial%2C%20Helvetica%2C%20sans-serif&amp;font-size=14px&amp;font-weight=normal&amp;theme=dark&amp;text-shadow=rgba(0%2C%200%2C%200%2C%200.00392157)%201px%201px%201px&amp;text-transform=none&amp;track-button=on#xdm_e=http%3A%2F%2Flittlegreencars.com&amp;xdm_c=5285298_4081&amp;xdm_p=1" frameborder="0" style="width: 80%; height: 1998px; margin-left: 10%;"></iframe>
+				<!-- make menu appear we are on this page -->
+				<div class="liveSelected"></div>
+			</div>
+
+			<!-- div used as internal page -->
+			<div id="merchDiv">
+				<!-- figures used to show product and price -->
+				<figure class="storeFigure">
+    				<img class="storePic" src="../images/absolutezero.jpg" alt="buy">
+    				<figcaption class="storeName">Absolute Zero -CD 7.99$</figcaption>
+    				<div class="test">
+    					<img src="../images/overlay.png" alt="overlay">
+    				</div>
+    			</figure>
+    			<figure class="storeFigure">
+    				<img class="storePic" src="../images/emphemera.jpg" alt="buy">
+    				<figcaption class="storeName">Ephemera -CD 14.99$</figcaption>
+    				<div class="test">
+    					<img src="../images/overlay.png" alt="overlay">
+    				</div>
+    			</figure>
+    			<figure class="storeFigure">
+    				<img class="storePic" src="../images/emphemera.jpg" alt="buy">
+    				<figcaption class="storeName">Ephemera -LP 27.99$</figcaption>
+    				<div class="test">
+    					<img src="../images/overlay.png" alt="overlay">
+    				</div>
+    			</figure>
+    			<!-- make it appear submenu is on this page -->
+				<div class="merchSelected"></div>
+			</div>	
+
+    	</div>
+			
+		<!-- Below is code to add hyper-links for validating your web-page.
+			 For your images to work correctly, you must place htmlcert.png and 
+			 csscert.jpg into the images folder in your home directory.  The images
+			 cane be downloaded from D2L under Course Document/Class Code -->
+			 
+		<span style="position:fixed; left:0px; bottom:0px;">
+			<a href="http://validator.w3.org/check/referer" target="_blank">
+				<img style="height:35px; width: 88px; display:inline; border:1px solid black;" src="../../images/html5cert.png" alt="html5 validator"/>
+			</a>
+			
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+				<img style="height:35px; width: 50px; display:inline; border:1px solid black;" src="../../images/csscert.jpg" alt="css validator"/>
+			</a>
+		</span>	
+		
+
+	</body>
+	
+</html><!-- End of html code -->

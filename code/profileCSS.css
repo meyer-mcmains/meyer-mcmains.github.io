@@ -1,0 +1,259 @@
+/*
+    Author:         Meyer McMains
+    Date:           4/26/2016
+    Assignment:     Personal Website
+    Purpose:        CSS Styling for profile page
+*/
+
+/* side menu background / wrapper */
+.sideMenuBar{
+	height: 800%;
+	width: 245px;
+	background: linear-gradient(to bottom, #4177e0, #4177e0, #4177e0, #4177e0, #666666);
+	margin-top: 3px;
+	position: absolute;
+}
+
+/* style for the picture of the user used in figure*/
+.profilePic{
+	border-radius: 100%;
+	width: 145px;
+	height: 145px;
+	margin: 0 auto;
+}
+
+/* style of user name used in figure */
+.profileName{
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	font-size: 22px;
+	max-height: 50px;
+	font-weight: bold;
+	margin: 0 auto;
+	cursor: default;
+}
+
+/* style of the profile figure used in the side menu */
+.profileFigure{
+	width: 145px;
+	height: 205px;
+	vertical-align: top;
+	caption-side: bottom;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+
+/* style of menu in sidebar */
+.sideMenu li{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 30px;
+	cursor: pointer;
+	text-shadow: 2px 2px #66CCCC;
+	display: block;
+}
+
+/* more menu style settings */
+.sideMenu{
+	width: inherit;
+	padding-left: 0px;
+	text-align: right;
+}
+
+/* used to style the sidemenu */
+.sideMenuTab{
+	position: relative;
+	width: inherit;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	z-index: 1;
+	white-space: pre;
+}
+
+/* chagne background color of sidemenu tab on hover */
+.sideMenuTab:hover{
+	background-color: #666666;;
+}
+
+/* wrapper used to change interal page */
+#aboutDiv{
+    height: auto;
+    width: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0px;
+    margin-left: 245px;
+    position: absolute;
+    opacity: 0;
+}
+
+/* wrapper used to change internal page */
+#followingDiv{
+    height: auto;
+    width: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0px;
+    margin-left: 245px;
+    position: absolute;
+    opacity: 0;
+}
+
+/* wrapper used to change internal page */
+#rsvpDiv{
+    height: auto;
+    width: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0px;
+    margin-left: 245px;
+    position: absolute;
+    opacity: 0;
+}
+
+/* set how the internal page should display */
+#aboutDiv:target{
+	width: 80%;
+	overflow: visible;
+    opacity: 1;
+	-webkit-transition: opacity 1s ease;
+}
+
+/* set how the internal page should display when targeted */
+#followingDiv:target{
+    width: 80%;
+    overflow: visible;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease;
+}
+
+/* set how the internal page should display when targeted */
+#rsvpDiv:target{
+	width: 80%;
+	overflow: visible;
+	opacity: 1;
+    -webkit-transition: opacity 1s ease;
+}
+
+/* settings for div that makes following tab look selected */
+.followingSelected{
+	width: 245px;
+    height: 57px;
+    background-color: #666666;
+    margin-left: -245px;
+    margin-top: 381px;
+    position: absolute;
+    top: 0px;
+}
+
+/* settings for div that makes about tab look selected */
+.aboutSelected{
+	width: 245px;
+    height: 57px;
+    background-color: #666666;
+    margin-left: -245px;
+    margin-top: 324px;
+    position: absolute;
+    top: 0px;
+}
+
+/* settings for div that makes rsvp tab look selected */
+.rsvpSelected{
+	width: 245px;
+    height: 57px;
+    background-color: #666666;
+    margin-left: -245px;
+    margin-top: 438px;
+    position: absolute;
+    top: 0px;
+}
+
+/* style to be used for text in about */
+.abouttext{
+	font-family: "Lucida Console", sans-serif;
+    font-size: 20px;
+}
+
+/* style to be used for header text in about */
+.aboutheader{
+	font-family: "Orbitron", sans-serif;
+    font-size: 30px;
+    border-bottom: 2px #66cccc solid;
+    font-weight: bold;
+}
+
+/* wrapper used to display content */
+.wrapper{
+	margin-left: 5%;
+    width: 90%;
+}
+
+/* alternative wrapper used to display content */
+.wrapper2{
+	width: 95%;
+	margin-left: 5%;
+}
+
+/* settings for album picture display in figure */
+.albumPic{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+/* sytle for text in album figure */
+.albumName{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    max-height: 50px;
+    font-weight: bold;
+    margin: 0 auto;
+    cursor: default;
+}
+
+/* general settings for album figure */
+.albumFigure{
+    width: 250px;
+    height: auto;
+    vertical-align: top;
+    caption-side: bottom;
+    margin: 0 auto;
+    margin-top: 2%;
+    display: inline-block;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+/* greyscale album cover on figure hover */
+.albumFigure:hover > .albumPic{
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: -webkit-filter 1s ease-in-out;
+}
+
+/* border for table */
+.border{
+    border-bottom: 2px ridge #66cccc;
+}
+
+/* table style */
+table{
+    width: 100%;
+}
+
+/* more table styling for inner content */
+td{
+    padding-top: 20px;
+    font-size: 25px;
+    font-family: "Lucida Console", sans-serif;
+}
+
+/*  used to display images in the table */
+.shows{
+    height: 50px;
+    width: 50px;
+    float: right;
+    border-radius: 100%;
+}

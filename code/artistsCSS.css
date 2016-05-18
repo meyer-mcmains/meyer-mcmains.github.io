@@ -1,0 +1,61 @@
+/*
+	Author:			Meyer McMains
+	Date:			4/26/2016
+	Assignment:		Personal Website
+	Purpose:		CSS Styling for artists page
+*/
+
+/* wrapper class for displaying artists  figures */
+.artistList{
+    height: 500%;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+/* style for displaying the artist picture in the figure */
+.artistPic{
+	border-radius: 100%;
+	width: 145px;
+	height: 145px;
+	border: transparent solid 5px;
+	float: left;
+	-webkit-transition: all 1s ease;
+}
+
+/* style for display the artist name in the figure caption */
+.artistName{
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	font-size: 20px;
+	max-height: 50px;
+	text-overflow: ellipsis;
+	font-weight: bold;
+	-webkit-transition: all 1s ease;
+	cursor: pointer;
+}
+
+/* style for each figure displayed */
+.artistFigure{
+	padding-top: 15px;
+	width: 145px;
+	height: 205px;
+	display: inline-block;
+	vertical-align: top;
+	caption-side: bottom;
+	-webkit-transition: all 1s ease;
+	cursor: pointer;
+}
+
+/* enlarge artist pic on figure hover */
+figure:hover > .artistPic{
+	-webkit-transform:scale(1.25);
+	border: solid #ff0000 5px;
+}
+
+/* enlarge artist name on hover */
+figure:hover > .artistName{
+	-webkit-transform:scale(1.25);
+	font-size: 22px;
+}

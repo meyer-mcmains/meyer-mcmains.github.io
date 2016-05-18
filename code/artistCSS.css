@@ -1,0 +1,891 @@
+/*
+    Author:         Meyer McMains
+    Date:           4/26/2016
+    Assignment:     Personal Website
+    Purpose:        CSS Styling for resume page
+*/
+
+
+/* Displays a side menu with gradient background*/
+.sideMenuBar{
+	height: 800%;
+	width: 245px;
+    background: linear-gradient(to bottom, #CCCCCC, #CCCCCC, #CCCCCC,#CCCCCC, #666666);
+	margin-top: 3px;
+	position: absolute;
+}
+
+/* Displays artist picture in sidebar figure*/
+.artistPic{
+	border-radius: 100%;
+	width: 145px;
+	height: 145px;
+	margin: 0 auto;
+}
+
+/* settings for artist name in figure caption */
+.artistName{
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	font-size: 22px;
+	max-height: 50px;
+	font-weight: bold;
+	margin: 0 auto;
+	cursor: default;
+}
+
+/* style for figure used in side menu */
+.artistFigure{
+	width: 145px;
+	height: 205px;
+	vertical-align: top;
+	caption-side: bottom;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+
+/* side menu menu style */
+.sideMenu li{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 30px;
+	cursor: pointer;
+	text-shadow: 2px 2px #66CCCC;
+	display: block;
+}
+
+/* div settings for side menu */
+.sideMenu{
+	width: inherit;
+	padding-left: 0px;
+	text-align: right;
+}
+
+/* settings for displaying the menu tabs */
+.sideMenuTab{
+	position: relative;
+	width: inherit;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	z-index: 1;
+	white-space: pre;
+}
+
+/* set background on hover */
+.sideMenuTab:hover{
+	background-color: #666666;;
+}
+
+/* the following ids are used to display interal pages using the div as a wrapper */
+#aboutDiv{
+    height: auto;
+    width: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0px;
+    margin-left: 245px;
+    position: absolute;
+    opacity: 0;
+}
+
+#newsDiv{
+    height: auto;
+    width: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0px;
+    margin-left: 245px;
+    position: absolute;
+    opacity: 0;
+}
+
+#albumsDiv{
+    height: auto;
+    width: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0px;
+    margin-left: 20%;
+    position: absolute;
+    opacity: 0;
+}
+
+#liveDiv{
+    height: 762%;
+    width: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0px;
+    margin-left: 245px;
+    position: absolute;
+    opacity: 0;
+}
+
+#merchDiv{
+    height: 762%;
+    width: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0px;
+    margin-left: 245px;
+    position: absolute;
+    opacity: 0;
+}
+
+/* the following targets tell how to display the interal page when targeted */
+#aboutDiv:target{
+	width: 80%;
+	overflow: visible;
+    opacity: 1;
+	-webkit-transition: opacity 1s ease;
+}
+
+#newsDiv:target{
+    width: 80%;
+    overflow: visible;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease;
+}
+
+#albumsDiv:target{
+	width: 80%;
+	overflow: visible;
+	opacity: 1;
+    -webkit-transition: opacity 1s ease;
+}
+
+#liveDiv:target{
+	width: 80%;
+	overflow: visible;
+	opacity: 1;
+    -webkit-transition: opacity 1s ease;
+}
+
+#merchDiv:target{
+	width: 80%;
+	overflow: visible;
+	opacity: 1;
+    -webkit-transition: opacity 1s ease;
+}
+
+/* following sytles tell how to make it look like the user has 'selected' a optoin in the side menu */
+.newsSelected{
+	width: 245px;
+    height: 57px;
+    background-color: #666666;
+    margin-left: -245px;
+    margin-top: 381px;
+    position: absolute;
+    top: 0px;
+}
+
+.aboutSelected{
+	width: 245px;
+    height: 57px;
+    background-color: #666666;
+    margin-left: -245px;
+    margin-top: 324px;
+    position: absolute;
+    top: 0px;
+}
+
+.albumsSelected{
+	width: 245px;
+    height: 57px;
+    background-color: #666666;
+    margin-left: -25%;
+    margin-top: 438px;
+    position: absolute;
+    top: 0px;
+}
+
+.liveSelected{
+	width: 245px;
+    height: 57px;
+    background-color: #666666;
+    margin-left: -245px;
+    margin-top: 495px;
+    position: absolute;
+    top: 0px;
+}
+
+.merchSelected{
+	width: 245px;
+    height: 57px;
+    background-color: #666666;
+    margin-left: -245px;
+    margin-top: 552px;
+    position: absolute;
+    top: 0px;
+}
+
+/* style to be used in heading text */
+.heading{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+	border-bottom: solid #66CCCC;
+    border-bottom-style: groove;
+    cursor: default;
+    font-weight: bold;
+}
+
+/* alternative heading text style */
+.heading2{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-bottom: solid #66CCCC;
+    border-bottom-style: groove;
+    cursor: default;
+    font-weight: bold;
+    -webkit-user-select: none;
+}
+
+/* text style to be used for information content */
+.info{
+	font-family: "Lucida Console", sans-serif;
+	text-align: center;
+	font-size: 20px;
+	margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    cursor: default;
+}
+
+/* style for the list of members */
+.members{
+    display: inline;
+    list-style: none;
+	font-family: "Lucida Console", sans-serif;
+	text-align: center;
+	font-size: 20px;
+	margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    cursor: default;
+}
+
+/* style for checkboxes used in hack
+they are not displayed so user can "check" a checkbox without the appareance of doing so */
+input[type=checkbox] {
+   position: absolute;
+   width: 0;
+   visibility: hidden;
+   top: -9999px;
+   left: -9999px;
+}
+
+/* style for radio buttons used in hack
+they are not displayed so user can "check" a checkbox without the appareance of doing so */
+input[type=radio] {
+   position: absolute;
+   width: 0;
+   visibility: hidden;
+   top: -9999px;
+   left: -9999px;
+}
+
+/* text style for biography */
+.bio{
+	font-family: "Lucida Console", sans-serif;
+	font-size: 20px;
+	margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+   	margin-top: 2%;
+   	max-height: 0px;
+   	overflow: hidden;
+   	cursor: pointer;
+   	transition: max-height 0.4s ease;
+}
+
+/* see comment line 282 */
+/* checking box will display the bio */
+input[type=checkbox]:checked ~ .bio{
+   max-height: 1000px;
+}
+
+/* style for news content*/
+.news1{
+	font-family: "Lucida Console", sans-serif;
+	font-size: 20px;
+	margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+   	cursor: pointer;
+  	max-height:60px;
+  	overflow: hidden;
+  	transition: max-height 0.4s ease;
+}
+
+/* see comment line 282 */
+/* checking box will display the news1 content */
+input[type=checkbox]:checked ~ .news1{
+   max-height: 1000px;
+}
+
+/* style for news heading */
+.newsheading{
+    font-family: 'Orbitron', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+	border-bottom: solid #66CCCC;
+    border-bottom-style: groove;
+    cursor: default;
+    font-weight: bold;
+    -webkit-user-select: none;
+}
+
+/* alternative style for newsheadings */
+.newsheading2{
+    font-family: 'Orbitron', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+	border-bottom: solid #66CCCC;
+    border-bottom-style: groove;
+    cursor: default;
+    font-weight: bold;
+    -webkit-user-select: none;
+}
+
+/* the following are disply styles for album covers */
+.cover{
+	display: inline;
+	width: 350px;
+}
+
+.cover img{
+	width: 350px;
+	height: 350px;
+	float: left;
+    padding-right: 50px;
+    cursor: pointer
+}
+
+.cover2{
+    display: inline;
+    width: 350px;
+}
+
+.cover2 img{
+    width: 350px;
+    height: 350px;
+    float: left;
+    padding-right: 50px;
+    cursor: pointer
+}
+
+/* style to be used when album is expanded */
+.expandcover{
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: 50px;
+    width: inherit;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+/* see comment line 282 */
+/* checking box will display the expanded over view */
+input[type=checkbox]:checked ~ .cover .expandcover{
+    width: 80%;
+    background-color: #D5B8CA;
+}
+
+/* see comment line 282 */
+/* checking box will display the tracks */
+input[type=checkbox]:checked ~ .cover .tracks{
+    display: block;
+}
+
+/* see comment line 282 */
+/* checking box will display the ablum title */
+input[type=checkbox]:checked ~ .cover .albumtitle{
+    display: block;
+}
+
+/* see comment line 282 */
+/* checking box will display the albumSubmenu */
+input[type=checkbox]:checked ~ .cover .albumSubMenu{
+    display: inline;
+}
+
+/* see comment line 282 */
+/* checking box will display the epanded view for the second album*/
+input[type=checkbox]:checked ~ .cover2 .expandcover{
+    width: 80%;
+    background-color: #AEAAA7;
+}
+
+/* see comment line 282 */
+/* checking box will display the trakcs view for the second album*/
+input[type=checkbox]:checked ~ .cover2 .tracks{
+    display: block;
+}
+
+/* see comment line 282 */
+/* checking box will display the ablumtitle for the second album*/
+input[type=checkbox]:checked ~ .cover2 .albumtitle{
+    display: block;
+}
+
+/* see comment line 282 */
+/* checking box will display the sub menu for the second album*/
+input[type=checkbox]:checked ~ .cover2 .albumSubMenu2{
+    display: inline;
+}
+
+/* wrapper settigns */
+.albumcontainer{
+    display: initial;
+}
+
+/* settings for how to display tracks */
+.tracks{
+    list-style-type: decimal-leading-zero;
+    display: none;
+    position: absolute;
+    margin-left: 350px;
+    list-style-position: inside;
+}
+
+/* list content style for tracks */
+.tracks li{
+    text-overflow: ellipsis;
+    font-family: "Lucida Console", sans-serif;
+    font-weight: bold;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80%;
+}
+
+/* separate style for the fist child in the tracks list */
+.tracks li:first-child{
+    font-family: "Lucida Console", sans-serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+/* style for the ablum 1 submenu */
+.albumSubMenu{
+    position: relative;
+    margin-top: 350px;
+    display: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+/* style for list items of the submenu for album 1 */
+.albumSubMenu li{
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #699677;
+    font-size: 25px;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 2px solid #d5b8ca;
+    border-bottom-style: ridge;
+}
+
+/* style for the tabs of the submenu for album 1 */
+.albumSubMenuTab{
+    background-color: #699677;
+}
+
+/* style used in album about content for ablum 1*/
+.albumabout{
+    display: none;
+    background-color: #699677;
+    font-family: "Lucida Console", sans-serif;
+    font-size: 20px;
+    text-align: right;
+    margin-left: 5%;
+}
+
+/* style for the ablum 2 submenu */
+.albumSubMenu2{
+    position: relative;
+    margin-top: 350px;
+    display: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+/* style for list items of the submenu for album 2 */
+.albumSubMenu2 li{
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #396784;
+    font-size: 25px;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 2px solid #AEAAA7;
+    border-bottom-style: ridge;
+}
+
+/* style for the tabs of the submenu for album 2 */
+.albumSubMenuTab2{
+    background-color: #396784;
+}
+
+/* style used in album about content for ablum 2*/
+.albumabout2{
+    display: none;
+    background-color: #396784;
+    font-family: "Lucida Console", sans-serif;
+    font-size: 20px;
+    text-align: right;
+    margin-left: 5%;
+}
+
+/* see comment line 282 */
+/* checking box will display the album about 1 content*/
+input[type=checkbox]:checked ~ .albumSubMenuTab .albumabout{
+    display: inline;
+}
+
+/* see comment line 282 */
+/* checking box will display the album about 2 content*/
+input[type=checkbox]:checked ~ .albumSubMenuTab2 .albumabout2{
+    display: inline;
+}
+
+/* hide the spotify content album 1 */
+.spotify{
+    display: none;
+}
+
+/* hide the spotify content album 2 */
+.spotify2{
+    display: none;
+}
+
+/* hide the lyrics content album 1 */
+.lyrics{
+    display: none;
+    background-color: #D5B8CA;
+}
+
+/* hide the lyrics content album 2 */
+.lyrics2{
+    display: none;
+    background-color: #D5B8CA;
+}
+
+/* see comment line 282 */
+/* checking box will display the spofity under submenu content for album 1*/
+input[type=checkbox]:checked ~ .albumSubMenuTab .spotify{
+    display: inline;
+    width: 100%;
+    margin-bottom: -7px;
+}
+
+/* see comment line 282 */
+/* checking box will display the spofity under submenu content for album 2*/
+input[type=checkbox]:checked ~ .albumSubMenuTab2 .spotify2{
+    display: inline;
+    width: 100%;
+    margin-bottom: -7px;
+}
+
+/* class to be used for elemnents to be hovered */
+.hoverred:hover{
+    border-bottom-color: #ff0000;
+}
+
+/* settings for submenu ablum 1hover */
+.albumSubMenuTab:hover{
+    background: #D5B8CA;
+}
+
+/* settings for submenu ablum 2 hover */
+.albumSubMenuTab2:hover{
+    background: #AEAAA7;
+}
+
+
+/* see comment line 282 */
+/* checking box will display lyrics submenu content for album 1*/
+input[type=checkbox]:checked ~ .albumSubMenuTab .lyrics{
+    display: inline;
+    background-color: #D5B8CA;
+}
+
+/* see comment line 282 */
+/* checking box will display lyrics submenu content for album 2*/
+input[type=checkbox]:checked ~ .albumSubMenuTab2 .lyrics2{
+    display: inline;
+    background-color: #D5B8CA;
+}
+
+/* class used to change pointer style */
+.click{
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+/* lyric content style for album 1 */
+.lyricSubTab{
+    width: 50px;
+    float: left;
+    position: relative;
+    text-align: center;
+    font-family: "Lucida Console", sans-serif;
+    margin-top: 1%;
+    margin-left: 5%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 2px solid #d5b8ca;
+    border-style: outset;
+    cursor: pointer;
+}
+
+/* style for lyric button hover forl ablum 1*/
+.lyricSubTab:hover{
+    background-color: #D5B8CA; 
+}
+
+/* lyric content style for album 2 */
+.lyricSubTab2{
+    width: 50px;
+    float: left;
+    position: relative;
+    text-align: center;
+    font-family: "Lucida Console", sans-serif;
+    margin-top: 1%;
+    margin-left: 5%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 2px solid #d5b8ca;
+    border-style: outset;
+    cursor: pointer;
+}
+
+/* style for lyric button hover forl ablum 2*/
+.lyricSubTab2:hover{
+    background-color: #D5B8CA; 
+}
+
+/* see comment line 292 */
+/* for the following checking a radiobutton will display the specific lyrics for the radiobutton after the display div*/
+input#radio1[type=radio]:checked ~ .display:after{
+    content: 'Like a crash I wait for the impact \A And like a train I wait for the smoke \A Like a storm I wait for the silence \A And like a bluff I wait till you fold \A\A Oh there’s a gun in the attic let me go grab it \A Oh I’d blow holes in my soul just so you can look past it \A Oh ye there’s glass on the floor there’s a hole in the roof \A Oh ye the chandelier fell now the rains falling through \A\A Like a dog I wait for my owner \A And Harper Lee I’ll kill me a bird \A And I sit back and I just watch it happen \A And just like you I won’t say a word \A\A Oh there’s a gun in the attic, let me go grab it \A Oh I’d blow holes in my soul just so you can look past it \A Oh ye there’s glass on the floor, there’s a hole in the roof \A Oh ye the chandelier fell, now the rain’s falling through \A\A Oh I put mice in the kitchen to see if you’d kill them \A Oh oh no you let them live now there’s twelve thousand kids \A Oh oh ye you let them breed now I’ve got mouths to feed \A Oh oh ye you let them stay now they have taken my place \A Oh ye you left them alone now they’re eating our home';
+    white-space: pre;
+}
+
+input#radio2[type=radio]:checked ~ .display:after{
+    content: 'On stormy nights \A She waits outside \A Her eyes so black \A Her feathers white \A I kick the fire \A Put out the light \A Burning embers \A Cross the sky \A  \A Only at dawn does my angel sing \A  \A The crystal wings \A They cut like blades \A Knock down the strong \A Scaring the brave \A One muddy sword \A One angel owl \A We won that war \A We\'re safe for now \A  \A But only at dawn does my angel sing \A  \A Only at dawn does my angel sing';
+    white-space: pre;
+}
+
+input#radio3[type=radio]:checked ~ .display:after{
+    white-space: pre;
+    content: 'Down to the river to silence me, love took me down to the river to silence me, [x3] \A  \A My love took me down to the river to silence me, \A And when he left I could not speak. \A I lay on the ground I tried to scream, \A But no sound did come out, I could only bleed blue. \A  \A I waited for him \'till the frost did come, \A My skin it turned blue and my body was numb. \A But my heart it burned out \'till it was no more, \A Still I wait on the ground I don\'t know what for. \A  \A There, there is a heart in here. \A Where, where is the heart in here? \A  \A This love\'s killing me but I want it to. \A So long you\'re gone, just like I always knew. \A But I\'m still here waiting for you. \A But I\'m still here waiting for you. \A  \A My love took me down to the river to silence me. \A And when he left I could not speak. \A And what he said to me I can never say. \A Because it\'s breaking my heart to this very day. \A  \A There, there is a heart in here. \A Where, where is the heart in here? \A  \A This love\'s killing me but I want it to. \A So long you\'re gone, just like I always knew. \A But I\'m still here waiting for you. \A But I\'m still here waiting for you. \A  \A Down to the river to silence me, love took me down to the river to silence me, \A  \A There, there is a heart in here. \A Where, where is the heart in here? \A  \A This love\'s killing me but I want it to. \A So long you\'re gone, just like I always knew. \A But I\'m still here waiting for you. \A But I\'m still here waiting for you. \A  \A Here waiting for you. \A  \A Here waiting for you.';
+}
+
+input#radio4[type=radio]:checked ~ .display:after{
+    white-space: pre;
+    content: 'Back on my track if I passed you, \A where would I be now? \A Cause I only live to love you \A and I\'m dead when you\'re not around \A  \A But we don\'t have to go out anymore \A We can just retire \A If I crack you don\'t have to put me back \A But if you leave me now I\'ll die \A  \A And I\'d go blind just to see you \A I\'d even sell my soul \A Just to put what\'s in you inside of me \A that makes me love you so \A And I get scared when I\'m not there \A cause no one can take care of you like me \A And I\'m not strong but if something\'s wrong, \A well I\'ll carry anything that you need \A  \A But we don\'t have to go out anymore \A We can just retire \A If I crack you don\'t have to put me back \A But if you leave me now I\'ll die';
+}
+
+input#radio5[type=radio]:checked ~ .display:after{
+    white-space: pre;
+    content: 'The sky is red but I can’t see the sun \A Or the moon \A I don’t know if there’s a storm to come \A  \A I’m not gonna wait for an oh my god \A I’m not gonna wait for an oh my god \A  \A Dogs are barking there’s a ghost in the room \A He throws the books off the shelves \A Turns the lights off too \A  \A Priest is standing there he says he knows my god \A Priest is standing there he says he knows my, knows my god \A  \A But still it shows \A Everybody knows \A Who gets left behind \A Gets blown away by the wind \A And washed away by the tide \A  \A Ooah Waah Waah Waah \A  \A Being dead is not as easy as it looks \A You know I can’t sit still because these pills that I took \A The side effects they get the best of my rage \A There’s a big red dragon coming out of its cave \A  \A I packed up all my things but then I lost my bag \A No matter how much I cry I know I’ll never get it back \A Sorry girl for taking you for a ride \A When I just crashed the car and then I left you, yeah I left you inside \A  \A But still it shows \A Everybody knows \A Who gets left behind \A Gets blown away by the wind \A And washed away by the tide \A  \A Ooah Waah Waah Waah \A  \A I’m not gonna wait for an oh my god \A I’m not gonna wait for an oh my god \A I’m not gonna wait for an oh my god \A I’m not gonna wait for an oh my god \A I’m not gonna wait for an oh my god \A I’m not gonna wait for an oh my god \A I’m not gonna wait for an oh my god \A  \A Ooah Waah Waah Waah';
+}
+
+input#radio6[type=radio]:checked ~ .display:after{
+    white-space: pre;
+    content: 'I saw a triangle \A And I fell in love with the colors I made for you \A Red and blue, red and blue \A  \A One, two three, one \A The car though pass the sun \A The sun it shines for you \A Red and blue, red and blue \A  \A Six, once the number \A And my name was spelled out \A And yours was spelled out too \A Red and blue, red and blue \A  \A Red and blue';
+}
+
+input#radio7[type=radio]:checked ~ .display:after{
+    white-space: pre;
+    content: 'And in a moment, I had forgotten  \A all the things that you had said to me \A I think just like a child \A You try to burn my mind \A All it is is dangerous to me \A  \A And through the kitchen door \A I see you\'re on the floor \A Said you never wanted me to see \A I guess what\'s done is done \A It looks like you had fun \A I\'ll just go inside and watch TV \A  \A I\'ve been enough \A and it gets rough \A when all the people stare \A talk on the streets and in my faces  \A that we are not living \A I\'m just a cast you had removed when all the pain was over \A I\'ll sit at home you\'ll never know \A the things you make me think of \A you make me think of \A  \A And when I think about \A the times you carried out \A everything you said you never would \A Pick up the telephone \A I ring my friends at home \A they say I should stop \A I think I should \A  \A And in a moment \A I try forgetting everything you\'ve ever said to me \A I think about the mountain and how I\'ve never been there \A probably because I was with you \A  \A You say enough \A You think you\'re tough \A to say to me it\'s over \A I\'m out the door \A but I\'m not sure if I\'ve forgotten something \A You lie awake you try to make amends  \A cause your not sleeping \A I\'ll sit at home you\'ll never know \A the things you make me think of \A You make me think of \A  \A And through the kitchen door \A I see you\'re on the floor \A Said you never wanted me to see \A I guess what\'s done is done \A It looks like you had fun \A I\'ll just go inside and watch TV';
+}
+
+input#radio8[type=radio]:checked ~ .display:after{
+    white-space: pre;
+    content: 'It\'s easy to fall in love  \A It\'s easy to fall in love with you  \A  \A It\'s easy to fall in love  \A It\'s easy to fall in love with you  \A  \A You go outside dressed like that  \A You knew what was going to happen didn\'t you  \A You talk to me like that  \A You knew I was slowly falling in love with you  \A  \A And I...ooh  \A  \A And I...ooh  \A  \A You know it\'s your neglect  \A is the reason that I\'m so obsessed with you  \A And when I asked you your name you said John Wayne  \A And I guess it\'s true  \A Coz then you shot me down  \A Doubled over and I hit the ground right in front of you  \A I guess in the Wild West  \A it\'s ok to shoot the pest that\'s annoying you  \A  \A And I...ooh  \A  \A And I...ooh  \A  \A It\'s easy to fall in love  \A It\'s easy to be alone  \A It\'s easy to hate yourself  \A when all your love is inside someone else  \A It\'s easy to take it all  \A It\'s easy to give it to  \A when there\'s more people out there to love  \A than people who love you  \A  \A And I...ohh  \A  \A It\'s easy to fall in love  \A (It\'s easy to fall in love with you)  \A The reason that I\'m so obsessed  \A (You knew what was going to happen didn\'t you)  \A I guess in the Wild West  \A (You knew I was slowly falling in love with you)  \A It\'s easy to fall in love  \A It\'s easy to fall in love with you';
+}
+
+input#radio9[type=radio]:checked ~ .display:after{
+    white-space: pre;
+    content: 'I woke up in the dark today \A You cut both your knees when you tried to runaway \A Please don\'t go, I wont hurt you I swear \A I\'ll just hold your hand, thats all I wanted anyway \A  \A You made up in the darkest way \A You sell all your things to afford a holiday \A Please don\'t fight, I won\'t touch you no more \A We\'ll just sit far apart and mark the clock thats on the wall(?) \A  \A Please believe my lies \A At least I know you gave it your best try \A  \A He took me to the woods today  \A I had made a little house where the two of us could stay \A You won\'t come because you never seem to care  \A So I\'ll just go on my own and I\'ll pretend that you are there \A  \A Please believe my lies \A At least I know you gave it your best try  \A Please believe my lies \A At least I know you gave it your best try  \A  \A Please believe my lies \A At least I know you gave it your best try  \A Please believe my lies \A At least I know you gave it your best try';
+}
+
+input#radio10[type=radio]:checked ~ .display:after{
+    white-space: pre;
+    content: 'Please say you\'re not alone \A Because that just wouldn\'t be right \A To leave a girl like you \A Alone in a town at night \A The men aren\'t safe around here \A They spit and shout and fight \A It\'s quiet back at my house \A And you can spend the night \A  \A But when I\'m with my friends \A I can be as sick as them \A But if it\'s sickness that has my friends \A Well it won\'t be long till we\'re all dead from it  \A  \A So if you think of me \A The way I think of you \A Then you must love me \A And this love must be true \A And yeah I like fucking with my head \A Because sometimes I like to feel \A The things I make are fake \A But they\'re better than what\'s real \A  \A But when I\'m with my friends \A I can be as sick as them \A But if it\'s sickness that has my friends \A Well it won\'t be long till we\'re all dead from it  \A  \A So if you love me \A For how I see myself \A You must be crazy \A Or I look like someone else';
+}
+
+input#radio11[type=radio]:checked ~ .display:after{
+    white-space: pre;
+    content: 'And so  \A It starts \A And like the rest \A It too will end \A It will my friend \A And if my eyes start turning white \A At least I\'ll know that you thought \A I thought I was right \A  \A There was \A A time \A When I thought \A I was king \A You could be queen \A So it\'s a bad time to hear \A It\'s gonna be a long \A And lonely year \A So if you can\'t tell me how you felt \A It\'s probably better I make it up myself \A Because if I thought you loved me once \A Then I\'d be happy \A Forever \A  \A And who will right \A And who will fight \A I know I am \A And if you\'re running out of space \A Please don\'t erase your time with me \A  \A And tell me \A Just like you would \A If we were kids \A Those things we did \A Because it\'s a god\'s thing to see \A When you\'re with me \A Way back when \A  \A So if you can\'t tell me how you felt \A It\'s probably better that I make it up myself \A Because if I thought you loved me once \A Then I\'d be happy \A Forever';
+}
+/* above lyrics are from AZLyrics http://www.azlyrics.com/ */
+
+/* lyrics for album 2 
+below lyrics are directly from the album insert*/
+
+input#radio100[type=radio]:checked ~ .display2:after{
+    content:'Dark, ringing through the sky \A Shaking in the clouds \A Until the harps are out of tune \A And the song they play every night \A Keeping you awake \A While th ethought sleeps in your soul \A  \A And every load i took \A To fill the hole that caved inside \A Just made it deeper, darker \A And wider than before \A  \A I cop just to change my scene \A And turn a useful nightmare \A Into a boring dream \A And the rood, like a map of my time \A It\'s always half past twelve \A And divided by two lines \A  \A And every step i took \A To take me futher from the source \A Just brought me closer, inward \A And more lost than before \A Don\'t make me say it out loud anymore \A  \A Oh well, if you don\'t love me now you didn\'t love me before \A  \A And my love is turning into greef \A And loneliness, they enemy \A Is my only belief \A From a child lost in a crowd \A Looking for the land marks \A That you keep burning down \A  \A And every sip i took from cups \A I carved out of my skull \A Just made me older, slower \A And sader than before \A Don\'t make me say it out loud anymore \A  \A Oh no, if you don\'t love me now you didn\'t love me before';
+    white-space: pre;
+}
+
+input#radio200[type=radio]:checked ~ .display2:after{
+    content:'Alone inside my head \A With a secret that\'s out of date \A And a whipping tongue \A That just can\'t wait \A  \A You know it used to be  \A The whole world versus you and me \A But now it seems \A It\'s just you versus me \A  \A When it comes down to it \A I just was not ready for it \A  \A Maybe all that\'s left \A Is a love more permanent than death \A It\'s Inevitable \A It\'s as sure as a bird \A  \A And all I want to see \A Is the difference in between \A A love born out of grief \A And sympathy \A  \A When it comes down to it \A I just was not ready for it \A  \A You\'re not backing down \A And I won\'t come around \A  \A If this is you just trying to hurt yourself \A Well I won\'t help, no I won\'t help \A And if you think I\'m going to self-destruct \A Well I\'ll give it up or I\'ll give you up \A  \A So I\'ll give it up';
+    white-space: pre;
+}
+
+input#radio300[type=radio]:checked ~ .display2:after{
+    content:'I\'ve been awaya for a long time \A You\'ve been my legs for my whole damn life \A I hope that I\'m not bothering you \A But I hope that you\'ve been youself today \A  \A I heard that you got a new job in town \A It pays my bills but it\'s getting you down \A I know that it\'s bothering you \A But I don\'t really give a damn today \A  \A It gets better \A When I hear my mother crying in her sleep \A It gets better \A When I know that all the crying is for me \A  \A I\'ve been this way for a long time \A You think it\'s your fault but I know that it\'s mine \A I know that everybody blames you \A But I can\'t let you take the blame today \A  \A It gets better \A When I hear my mother crying in her sleep \A It gets better \A When I know that all the crying is for me \A  \A I\'ve been this way for a long time';
+    white-space: pre;
+}
+
+input#radio400[type=radio]:checked ~ .display2:after{
+    content:'I was born on April 15th \A Into the arms of my family \A But now I\'m gone at 21 \A Into the arms of everyone \A  \A The world is a web \A And it\'s caught you and me \A And giving up \A Feels like getting free \A  \A The garden of death is a beautiful place \A The moons always full with her marble face \A Yeah the wind, tt\'s warm and the grass is soft \A And the bird in the tree stings your favourite song \A  \A We could be gone \A Any day now \A Don\'t know why \A And you don\'t care how \A  \A But thats life\'s trick \A Yeah she takes what she gives \A Lets hope death does the opposite \A  \A Well I\'m sitting at the table \A But the foods all gone \A So I\'m drinking to tomorrow \A In the setting sun';
+    white-space: pre;
+}
+
+input#radio500[type=radio]:checked ~ .display2:after{
+    content:'Brother \A I\'ve been trying to reach you \A Brother \A Got a new song to teach you \A Another useless piece of advice \A  \A Our mother wants to know if you\'ve grown \A She\'s better \A But still cries down the phone to her sister \A At least once or twice a week \A  \A And Hugo thinks he\'s fallen in love \A But you know what he\'s like \A She is nice \A You never know \A Maybe this one will last \A  \A As for me \A When daddy died \A I guess that I went crazy \A Was a hell of a ride \A Yeah, but lately I\'ve been doing alright \A  \A Then last night \A I had a dream but it seemed like real life \A I awoke with a scream into lamplight \A And everything was quiet';
+    white-space: pre;
+}
+
+input#radio600[type=radio]:checked ~ .display2:after{
+    content:'I think that beauty is the beast \A It\'s in my head while I can\'t sleep \A It\'s everything I want to be \A Makes me happy \A  \A And when I\'m walking down the street \A All of the people that I see \A I think they\'re all looking at me \A Makes me happy \A  \A There\'s poison in these magazines \A My clothes are splitting at the seams \A They make me feel like I\'m so fat \A Hey at least I am happy \A  \A There\'s evil on the radio \A Seeps out of every fucking show \A But I guess that you already know \A And does that make you happy? \A  \A And then I hear Clair \A Clair De Lune \A Playing in my head \A Puts me in the mood \A  \A Then she turns to me \A And she asks are you happy \A  \A I pray in front of my tv \A I put my face against the screen \A Now all my gods are in 3D \A And yeah that makes me happy \A  \A And you\'re the only one who sees \A Just what this world it does to me \A But now you say you want to leave \A Because you\'re unhappy \A  \A And then I hear Clair \A Clair De Lune \A Playing in my head \A Puts me in the mood \A  \A Then she turns to me \A And she asks are you happy \A  \A And as unlikely as it seems \A Yeah there\'s a place for you and me \A On board a boat inside a dream \A And I know we\'ll be happy';
+    white-space: pre;
+}
+
+input#radio700[type=radio]:checked ~ .display2:after{
+    content:'Where are we going \A Where are we goig with these arms \A These legs \A Where am I crawling \A Where am I crawling \A Back to love again \A  \A Am I a soldier \A Am I a soldier if I am bloddy and cleaved \A Am I a soldier \A Am I a soldier if I buther hears as a hobby \A  \A Will you stay with me tonight \A Don\'t le tme out of your sight \A Will you take away the impression of glass \A  \A You reply no \A I say alright, \A Ok Ok Ok that\'s fine \A  \A But if you touch me and I scream \A Just remember what I mean \A I\'m alright \A  \A Am I demonic \A Am I demonic if I dislike the truth \A Am I a liar \A Am I a liar if I deny my feelings for you \A  \A Will you stay with me tonight \A Don\'t let me out of your sight \A Will you take away the impression of glass \A  \A You reply no \A I say alright, \A Ok Ok Ok that\'s fine \A  \A But if you touch me and I scream \A Just remember \A I\'m alright';
+    white-space: pre;
+}
+
+input#radio800[type=radio]:checked ~ .display2:after{
+    content:'Doesn\'t matter \A What you believe in \A Once you\'ve seen it I don\'t think you\'ve got a choice \A Feel a hand \A Hear a voice \A  \A Today has been \A Full of omens \A And I\'m hoping that I could be one of yours \A Respect birds \A Talking mirrors \A  \A My whole life\'s been  \A One big breath in \A And I feel that I am ready to breath out \A Feel these words \A From my mouth \A  \A I don\'t want to wreck your party \A But it could be my last chance \A Yeah my last chance \A  \A Now it\'s over \A and they\'re leaving \A Did I try to hard to tell them how I feel \A Did it sound \A Like a joke \A  \A So I\'m gonna wreck your party \A Because I\'ll make you cry the tears that I can\'t \A  \A I don\'t want to wreck your party \A I don\'t want to wreck your party \A I don\'t want to wreck your party \A I don\'t want to wreck your party';
+    white-space: pre;
+}
+
+input#radio900[type=radio]:checked ~ .display2:after{
+    content:'I\'ve always been carried by this band \A Your song shadows my song man \A I hever had a back up plan \A You have made me who I am \A  \A Tell me I was wrong \A You know that I\'d leave it for you \A I\'d do anything you ask me to \A  \A Does my song belong \A Or make you remember about me \A Is there anything left you can see \A  \A I don\'t even know who \A Who I\'m singing about anymore \A Who I\'m singing about anymore \A  \A I never knew I crossed the line \A Hindsight fucks me all the time \A You know I leave it on demand \A One month makes you a new man \A  \A Tell me I was wrong \A You know that I\'d leave it for you \A I\'d do anything you ask me to \A  \A Does my song belong \A Or make you remember about me \A Is there anything left you can see \A  \A I don\'t even know who \A Who I\'m singing about anymore \A Who I\'m singing about anymore \A  \A I can\'t even tell who \A Who I\'m singing about anymore \A Who I\'m singing about anymore';
+    white-space: pre;
+}
+
+input#radio1000[type=radio]:checked ~ .display2:after{
+    content:'I spend all my time \A Trying to break you down \A Why won\'t you just die \A It\'s always on my mind \A  \A You\'re so insecure \A With your high-heels and your shortest skirt \A I could never wear that \A Take a fucking photograph \A  \A I can\'t remind \A Myself if I want to be alright \A I\'m changing white \A You know that I love to be so contrived \A  \A You\'re my main event \A I hate you that does not mean obsessed \A A dog chewing it\'s own bones \A And I won\'t ever go home \A  \A I can not decide \A If It\'s you I hate or something inside \A For now I\'ll stick with you \A It\'s what good women do \A  \A I can\'t remind \A Myself if I want to be alright \A I\'m changing white \A You know that I love to be so contrived';
+    white-space: pre;
+}
+
+input#radio11000[type=radio]:checked ~ .display2:after{
+    content:'The winds of eace \A Blows to me from your bedside \A Iv never felt so serene \A Its like I\'ve died \A In a field of green \A Your the voice inside \A My winds of peace \A  \A The night can bring so many things \A And you can wake up old \A So let me fly on night black wings \A To find a feather \A Thats made of gold \A Even a pig can fly \A In winds of peace \A  \A When the whole world is still \A And nothing moves \A A leaf that shakes on the tree \A Is telling me \A To try stay strong \A One day we\'ll set sail \A In winds of peace \A  \A Little piggies fly \A In winds of peace \A Your the voice inside \A My winds of peace';
+    white-space: pre;
+}
+
+input#radio12000[type=radio]:checked ~ .display2:after{
+    content:'You\'re like a target \A And I\'ve missed it \A It\'s not the hole that you dig \A But what goes in it \A  \A You suck the poison out \A But then you kiss me \A You take the clues all away \A To keep some mystery \A  \A Jesus \A Mary \A Mother of God \A I\'m alive again \A  \A I\'m coming home soon \A Did you miss me \A Has anything changed \A In it\'s bleak beauty \A  \A Did your birds turn to bats \A How\'s the factory \A Did the assembly line stop \A Or keep running smoothly \A  \A Jesus \A Mary \A Mother of God \A I\'m alive again';
+    white-space: pre;
+}
+/* style for the div used to display the lyris */
+.display{
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Lucida Console", sans-serif;
+    font-size: 15px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    text-align: center
+}
+
+.display2{
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Lucida Console", sans-serif;
+    font-size: 15px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    text-align: center
+}
+
+/* style for merch images in the storefigure */
+.storePic{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+/* style for text in the storefigure */
+.storeName{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    max-height: 50px;
+    font-weight: bold;
+    margin: 0 auto;
+    cursor: default;
+}
+
+/* style of the storefigure */
+.storeFigure{
+    width: 250px;
+    height: auto;
+    vertical-align: top;
+    caption-side: bottom;
+    margin: 0 auto;
+    margin-top: 2%;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+/* style for the storeFigure pic on hover */
+.storeFigure:hover > .storePic{
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: -webkit-filter 1s ease-in-out;
+}
+
+/* style for the img on hover for the figure */
+.storeFigure:hover > .test > img{
+    display: inline;
+    float: left;
+    margin-top: -304px;
+    position: absolute;
+}
+
+/* used to display the overlay on the store ifgure */
+.test > img{
+    display: none;
+    width: 250px;
+    height: 250px;
+    outline: 1px solid transparent;
+}
