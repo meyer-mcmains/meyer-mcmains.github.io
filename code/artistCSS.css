@@ -683,14 +683,14 @@ input[type=checkbox]:checked ~ .albumSubMenuTab2 .lyrics2{
     margin-left: 5%;
     padding-top: 12px;
     padding-bottom: 12px;
-    border: 2px solid #d5b8ca;
+    border: 2px solid #aeaaa7;
     border-style: outset;
     cursor: pointer;
 }
 
 /* style for lyric button hover forl ablum 2*/
 .lyricSubTab2:hover{
-    background-color: #D5B8CA; 
+    background-color: #aeaaa7; 
 }
 
 /* see comment line 292 */
