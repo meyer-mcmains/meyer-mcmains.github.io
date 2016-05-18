@@ -1,0 +1,55 @@
+Web Design Personal Website
+Meyer McMains
+Phase 2
+
+ Mission Statement
+	Record.com is the collection of everything related to a specific band or musical act. The site functions as a resource for 
+	bands and their fans alike. Fans can: browse an artist’s musical works, listen to their content, read their history, 
+	browse lyrics, purchase merchandise, find and purchase tickets to live shows, and view current news related to the band. 
+	Musicians and bands: can update news and announcements about their group, list upcoming concert dates, upkeep their history, 
+	and sell their albums and other merchandise.
+	
+Targeted Users
+  Musicians, Bands, and other Musical Groups
+  Fans / Users (older and younger)
+  
+Musicians, Bands, and other Musical Groups
+
+	  This group consists of those that would have a page dedicated to their musical group. This includes solo musicians, bands, 
+	and other musical groups such as orchestras. This group should be able to update their content such as new music, merchandise, 
+	announcements, and upcoming concerts.
+	
+	  The focus is keeping their group’s page updated with current information about their group, new music, upcoming concerts, 
+	and new merchandise. Several things need to be taken into account. Do users of the site get a good feel for my band based on the 
+	content presented? Is it easy for users to listen to and buy my music? Is it easy for me to add content for users to buy whether 
+	that be physical or digital merchandise? Can users easily purchase physical merchandise? Can I announce special events or 
+	announcements related to my group? Is it easy to manage upcoming concerts, and is this information easily accessible to the user. 
+	Can the user easily buy tickets to upcoming shows?
+
+Fans / Users (younger)
+
+	  Fans and users that are younger, are energetic and integrated with current technology. Younger users are integrated with 
+	social media and typically like to share music with their friends. Younger users will be on the lookout for new music. 
+	They are used to clean interfaces and initiative navigation, their eyesight is typically good and they can adapt quickly to new 
+	interfaces and layouts. This group is likely interested in streaming music, concert dates, and lyrics. They are likely to be less 
+	concerned with physical copies of music and the history of a group.
+	
+	  A younger use will be concerned with the general look, does the design fit with other modern application and site design. 
+	Is navigation initiative and easy? Fans will want to be label to easily stream a group’s music and follow along with the 
+	lyrics of a song. They will be interested in the group’s news and announcements and will want to know about upcoming concerts. 
+	Is it easy to find upcoming concert dates and purchase tickets? Can I easily share this band / group with my friends? 
+	Is it easy for me to find new music based on genre or similar music to what I listen to? Is there a way for me to manage 
+	the bands and artists that I would like to follow?
+
+Fans / Users (older)
+
+	  This subset of fans and users are older, they have been following music for a long time and are likely to be interested in 
+	specific groups they likely care less about finding new music. They are not always integrated with current web design so 
+	intuitive interfaces may seem foreign and un-intuitive. Older users likely have decent eye sight, but small text may be 
+	difficult to read without the use of glasses. This group is likely interested in buying physical copies of music, reading about 
+	a group’s history, and finding upcoming concert dates. They are probably not as interested in streaming, social media, and lyrics.
+	
+	  Older users will have several concerns. Is it easy for me to find band / groups that I like? Can I navigate a bands page easily 
+	  to find what I am looking for? Am I able to read all of the information presented? If I am going to purchase music, can I easily 
+	  find what I would like to buy and are there plenty of buying options (credit card, PayPal etc.) If I would like to attend a 
+	  concert can I easily find shows to go to and purchase tickets? 
