@@ -1,0 +1,62 @@
+Web Design Personal Website
+Meyer McMains
+Phase 3
+
+Structure
+	The underlying structure consists of 4 pages in total, home, artist, resume, and users. Artist will have several sub elements that will drastically change the page based on what is selected. As seen in the diagram the artist page will have several elements that fall under artist and then album.
+	
+  The resume speaks for itself, it was designed by set standards and the content will not be modified, navigation will have to be added though. 
+  
+  The user’s page will have different elements depending on who is logged in. An artist will have the following elements: following, about, and member. A fan will have the elements including: following, about, RSVP’d. The main page will include the elements: search, upcoming shows, upcoming releases, and log-in. 
+  
+  Each of the main pages will have navigation to take the user to any other page. This should make navigation between the major pages simple. The most complex navigation will be in on the Artist page. In order to fit the desired amount of content there will be two tier navigation. On the page you can selected any choice under Artist. This will show the content within the same page. If albums is selected, the albums released by that artist will show on screen and selecting one of those will display elements under album, again within the same page.
+  
+
+Content
+
+Home:
+The home page will contain a search bar to be used to lookup groups or categories. It will also include space for listings of upcoming shows and releases. Ideally this would filter based on location and what groups you follow, but that is outside of the scope of the class. Also there will be a log-in area that would function to allow the user to view preferential content.
+
+Artists
+This page will be very content heavy, but what is show will change based on selections in right-side navigation. 
+
+  Artist
+  This would be a right-navigation section that would contain a picture of the artist or band. It would also contain a page internal navigation for: News, About, Bio, Tickets, Merchandise, and Albums.
+
+  News
+  This would be simple text where a bands news would show up this could include anything from upcoming events or releases, or just simple updates on what the band is doing.
+
+	About
+  This section would be quick info about the band. Certainty could include things include, musical genre, year formed/disbanded, current members. Notable achievements etc.
+	 Bio
+  The bio element would be used to give greater detail into the history of a band or group. This could include a very detailed history, the lineup at different times, and other information related to the band. The type of content desired here would be similar to Wikipedia.
+	Tickets
+  Content for the ticket page is just an area to find tickets for upcoming concerts for a band. Ideally you would purchase tickets directly from the band, but likely a vendor(s) would have to be embedded here.
+	Merchandise
+  Store area to be used to sell any merchandise the band offers. This could include apparel, digital format music, and physical format: CDs and Vinyl.
+			
+  Albums
+  The albums content area would simply display the album art of every album released by a band. Each album would be clickable, and should expand to show the track list and the following navigation options.
+				About
+        About shows text format information about the specific album. This could include some history behind the album etc.
+				Lyrics
+        The lyrics content pane would show the lyrics for any track selected from the album.
+				Streaming
+        This section is potentially optional. Ideally a track could be streamed by selected in from the Album pane and pressing a play button. If streaming has to be embedded than this section may be needed to stream music.
+        
+Resume
+The resume page contains the content specified including contact information, education, and Experience.
+
+Users
+The content for the users is split into two categories: artist and fan. Artist will have the extra category member. Fans will have the extra category RSVP’d. Both will contain the categories Following and About.
+	Following
+  Content for following will just display an image and name or a group you are following. Clicking will link the user to that artist’s page. 
+  About
+  This will be used to have text about the user, completely optional.
+  Member
+  Simple text section used by artist users to indicate what group or groups they are a member in.
+  RSVP’d
+  This content section is for fans to have a place for shows they are planning on attending. This will also show past events the user has attended.
+  
+Design
+	The general design of the site will be modern and minimalist. Color palette consisting of simple colors. Preferably the site will have a dark theme as this will improve readability and ease on the eyes in general –white is overrated. The mock-ups will help explain.
