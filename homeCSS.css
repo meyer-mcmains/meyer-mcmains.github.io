@@ -1,0 +1,123 @@
+/*
+    Author:         Meyer McMains
+    Date:           4/26/2016
+    Assignment:     Personal Website
+    Purpose:        CSS Styling for home page
+*/
+
+/* wrapper to center news content */
+.news{
+    display: inline;
+    height: auto;
+    float: left;
+    width: 70%;
+    margin-top: 90px;
+    position: relative;
+}
+
+/* wrapper to right side shows content */
+.shows{
+    float: right;
+    display: inline;
+    width: 15%;
+    height: auto;
+    margin-top: 120px;
+	box-shadow: -2px 0px #66cccc;
+}
+
+/* wrapper to left side releases content */
+.releases{
+    display: inline;
+    width: 15%;
+    height: auto;
+    float: left;
+    margin-top: 120px;
+    box-shadow: 2px 0px #66cccc;
+}
+
+/* style for titles */
+.title{
+	font-family: 'Orbitron', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 22px;
+}
+
+/* separate style for news titles */
+.newsTitle{
+	font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 2%;
+    font-size: 30px;
+}
+
+/* style for table under news content */
+table{
+	width: 95%;
+	margin-left: 5%;
+}
+
+/* more table styling */
+td{
+	padding-top: 20px;
+    font-size: 25px;
+    font-family: "Lucida Console", sans-serif;
+    cursor: pointer;
+}
+
+/* border to be used with the table content */
+.border{
+	border-bottom: 2px ridge #66cccc;
+}
+
+/* image style for release figure */
+.releasePic{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* text style for release figure */
+.releaseName{
+	font-family: "Lucida Console", sans-serif;
+    text-align: center;
+    font-size: 13px;
+    max-height: 50px;
+    font-weight: bold;
+    margin: 0 auto;
+    cursor: default;
+}
+
+/* general figure style used in shows and releases content */
+.releaseFigure{
+	width: auto;
+    height: auto;
+    vertical-align: top;
+    caption-side: bottom;
+    display: block;
+    cursor: pointer;
+}
+
+/* change release style on hover */
+.releaseFigure:hover > .releasePic{
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: -webkit-filter 1s ease-in-out;
+}
+
+/* change show pic style on hover */
+.releaseFigure:hover > .showPic{
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: -webkit-filter 1s ease-in-out;
+}
+
+/* different display setting for shows pic */
+.showPic{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+/* change border when news is hovered to red */
+td.border:hover{
+	border-bottom: 2px ridge #ff0000;
+}

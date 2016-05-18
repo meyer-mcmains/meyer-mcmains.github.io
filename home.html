@@ -1,0 +1,125 @@
+<!DOCTYPE html>  <!-- Defines the version of html.  In this case version 5 -->
+
+<html lang = "en"> <!--Start of html code -->
+
+	<head><!-- meta-data or information about the web page 
+				goes in the header section-->
+				
+		<!--
+			Name:		Meyer McMains   
+			Course:   	CSCI-1710-002
+			Assignment:	Personal Project
+			Due Date:	April 26th 2016
+			
+			Purpose: 	Using knowledge gained in class create a website
+		-->
+		<meta charset="utf-8">
+		<title>Home</title>
+		<!-- Import style sheets -->
+		<link rel="stylesheet" type="text/css" href="myCss.css">
+		<link rel="stylesheet" type="text/css" href="homeCSS.css">
+		<!-- Import google font stylesheet -->
+		<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+		<!-- set favicon -->
+		<link rel="icon" href="../images/icon.ico"/>
+		
+	</head>
+	
+	<body><!-- the body of the web-page is where the actual 
+			content being displayed is written/placed -->
+
+		<!-- images make up logo in top left -->
+		<img class="logo" src="../images/mainIcon.png" alt="logo">
+		<img class="arm" src="../images/arm.png" alt="logo arm">
+
+		<!-- display the login -->
+		<img class="login" src="../images/myself.jpg" alt="login">
+		<div class="loginButton">Logout</div>
+
+		<!-- name 'Record' goes over logo to complete it -->
+		<p class="name">Record</p>
+
+		<!-- header contains content for the reset of the page -->
+    	<div class="header">
+    		<!-- display the navigation menu -->
+    		<ul class="menu">
+    			<li><div class="pageOn">Home</div></li>  <!-- page we are on -->
+    			<li><a class="menuAnchor" href="artists.html"><div class="page">Artists</div></a></li>
+    			<li><a class="menuAnchor" href="profile.html#aboutDiv"><div class="page">Profile</div></a></li>
+    			<li><a class="menuAnchor" href="resume.html"><div class="page">Resume</div></a></li>
+    		</ul>
+
+    		<!-- show upcomming album releases on the left using figures to contain images
+    		and their corresponding text -->
+    		<div class="releases">
+    			<p class="title">Upcomming Releases</p>
+				<figure class="releaseFigure">
+    				<img class="releasePic" src="../images/up1.jpg" alt="releasing">
+    				<figcaption class="releaseName">Reversing into the Future<br>April 29</figcaption>
+    			</figure>
+    			<figure class="releaseFigure">
+    				<img class="releasePic" src="../images/up2.jpg" alt="releasing">
+    				<figcaption class="releaseName">Last Evenings On Earth<br>April 29</figcaption>
+    			</figure>
+    			<figure class="releaseFigure">
+    				<img class="releasePic" src="../images/up3.jpg" alt="releasing">
+    				<figcaption class="releaseName">Nonagon Infinity<br>April 29</figcaption>
+    			</figure>
+    		</div>
+
+    		<!-- display general musical news using a table in center of screen -->
+    		<div class="news">
+    			<p class="newsTitle">News</p>	
+    			<table>
+	    			<tr>
+	    				<td class="border">Prince Dies at age of 57</td>
+	    				<td>April 21st</td>
+	    			</tr>
+	    			<tr>
+	    				<td class="border"><a class="menuAnchor" href="littlegreencars.html#newsDiv">Little Green Cars New ALbum Ephemera Released</a></td>
+	    				<td>March 11th</td>
+	    			</tr>
+    			</table>
+    		</div>
+
+    		<!-- display upcomming live shows on right side using ifgures to contain image of
+    		artist and the corresponging text for the event. -->
+    		<div class="shows">
+    			<p class="title">Upcomming Shows</p>
+    			<figure class="releaseFigure">
+    				<img class="showPic" src="../images/saidthewhaleArtists.jpg" alt="show">
+    				<figcaption class="releaseName">Said the Whale<br>April 28</figcaption>
+    			</figure>
+    			<a class="menuAnchor" href="littlegreencars.html#liveDiv">
+	    			<figure class="releaseFigure">
+	    				<img class="showPic" src="../images/littlegreencarsArtists.jpg" alt="show">
+	    				<figcaption class="releaseName">Little Green Cars<br>April 28</figcaption>
+	    			</figure>
+	    		</a>
+    			<figure class="releaseFigure">
+    				<img class="showPic" src="../images/yesArtists.jpg" alt="show">
+    				<figcaption class="releaseName">Yes<br>April 29</figcaption>
+    			</figure>
+    		</div>
+
+    	</div>
+			
+		<!-- Below is code to add hyper-links for validating your web-page.
+			 For your images to work correctly, you must place htmlcert.png and 
+			 csscert.jpg into the images folder in your home directory.  The images
+			 cane be downloaded from D2L under Course Document/Class Code -->
+			 
+		<span style="position:fixed; left:0px; bottom:0px;">
+			<a href="http://validator.w3.org/check/referer" target="_blank">
+				<img style="height:35px; width: 88px; display:inline; border:1px solid black;" src="../../images/html5cert.png" alt="html5 validator"/>
+			</a>
+			
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+				<img style="height:35px; width: 50px; display:inline; border:1px solid black;" src="../../images/csscert.jpg" alt="css validator"/>
+			</a>
+		</span>	
+		
+
+	</body>
+	
+</html><!-- End of html code -->
